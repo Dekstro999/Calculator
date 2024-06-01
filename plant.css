@@ -1,0 +1,93 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-size: 3em;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.calculadora-container {
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    justify-content: center; /* Centramos los elementos horizontalmente */
+    gap: 20px; /* Añadimos espacio entre la calculadora y el historial */
+    margin-top: 20px; /* Añadimos un margen superior */
+}
+
+.calculadora {
+    border: 2px solid #444;
+    border-radius: 20px;
+    width: 350px;
+    height: 570px;
+    background-color: #2d2d2d;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#pantalla {
+    width: 90%;
+    height: 10%;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: right;
+    border-radius: 15px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+#historial-container {
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: #767676;
+    overflow-y: auto; /* Agrega desplazamiento vertical si el contenido es demasiado largo */
+    max-height: 570px; /* Altura máxima del contenedor del historial */
+    width: 200px; /* Ancho del contenedor del historial */
+}
+
+#historial-container h2 {
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+input[type="button"] {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 1.2em;
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="button"]:active {
+    transform: scale(0.95);
+}
+
+input[type="button"]:hover {
+    background-color: #666;
+}
+
+input[type="button"]:last-child {
+    margin-right: 0;
+}
+
+footer, b, a {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3%;
+    font-family: "Courier New", Courier, monospace;
+    color: #fff;
+}
