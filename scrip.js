@@ -61,7 +61,7 @@ function limpiar() {
     historial.innerText = ""; // Limpiar el historial cuando se presiona el botón C o back
 }
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
     const key = event.key;
 
     if (!isNaN(key) || key === ".") {
